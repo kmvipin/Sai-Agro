@@ -3,49 +3,47 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background */}
       <div className="absolute inset-0">
         <Image
           src="/images/hero-turmeric.jpg"
-          alt="Premium turmeric and spices"
+          alt="Premium turmeric exports by Sai Agro"
           fill
-          className="object-cover"
           priority
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-secondary/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32 text-center">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            Sai Agro – Turmeric Specialist
+\      {/* Content */}
+      <div className="relative z-10 section-padding container-narrow w-full pt-32">
+        <div className="max-w-2xl">
+          <p className="animate-fade-up text-primary font-body text-sm font-semibold uppercase tracking-[0.2em] mb-6">
+            Wholesale Export Since 2010
           </p>
-          <h1 className="font-serif text-4xl font-bold leading-tight text-background sm:text-5xl lg:text-7xl text-balance">
-            Premium Turmeric Products for Global Markets
+          <h1 className="animate-fade-up-delay-1 section-title text-secondary-foreground leading-[1.1]">
+            Premium Turmeric & Spices for Global Markets
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-background/80 max-w-2xl mx-auto text-pretty">
-            Sourced from the finest turmeric farms, processed to international
-            quality standards, and delivered worldwide. Your trusted partner for
-            bulk turmeric exports.
+          <p className="animate-fade-up-delay-2 mt-6 text-lg text-secondary-foreground/80 max-w-lg leading-relaxed font-body">
+            Sourced from India's finest farms. Tested for purity. Exported worldwide with consistency you can trust.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
+          <div className="animate-fade-up-delay-3 mt-10 flex flex-wrap gap-4">
+            <a
               href="#products"
-              className="rounded-lg bg-primary px-8 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center px-7 py-3.5 text-sm font-semibold rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
             >
-              View Turmeric Products
-            </Link>
-            <Link
+              View Our Products
+            </a>
+            <a
               href="#contact"
-              className="rounded-lg border-2 border-background/30 bg-background/10 px-8 py-4 text-sm font-bold uppercase tracking-wider text-background hover:bg-background/20 transition-colors"
+              className="inline-flex items-center px-7 py-3.5 text-sm font-semibold rounded-md border border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
             >
               Request Bulk Quote
-            </Link>
+            </a>
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
     </section>
   )
 }

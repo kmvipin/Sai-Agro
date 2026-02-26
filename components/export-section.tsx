@@ -18,7 +18,7 @@ export function ExportSection() {
               Global Exports
             </p>
             <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl leading-tight text-balance">
-              Why Global Buyers Trust SpiceRoot
+              Why Global Buyers Trust SaiAgro
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Our vertically integrated supply chain, state-of-the-art
