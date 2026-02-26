@@ -114,10 +114,10 @@ export function Footer() {
                 Maharashtra – 431512, India
               </li>
               <li className="text-sm text-secondary-foreground/60">
-                exports@saiagro.com
+                sp.tmc1@gmail.com
               </li>
               <li className="text-sm text-secondary-foreground/60">
-                +91 98765 43210
+                +91 87005 12955
               </li>
             </ul>
           </div>

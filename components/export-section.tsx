@@ -2,10 +2,10 @@ import Image from "next/image"
 import { Globe, Ship, BarChart3, Clock } from "lucide-react"
 
 const stats = [
-  { value: "40+", label: "Countries Served", icon: Globe },
+  { value: "40+", label: "Companies Served", icon: Globe },
   { value: "5000+", label: "Metric Tons Annually", icon: Ship },
   { value: "99.5%", label: "Quality Compliance", icon: BarChart3 },
-  { value: "25+", label: "Years in Export", icon: Clock },
+  { value: "40+", label: "Years in Export", icon: Clock },
 ]
 
 export function ExportSection() {

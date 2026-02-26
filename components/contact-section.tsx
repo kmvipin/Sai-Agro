@@ -62,7 +62,33 @@ export function ContactSection() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8 lg:p-10 shadow-sm">
-            <form className="flex flex-col gap-6">
+            <form
+              action="https://formspree.io/f/xwvnyyvl"
+              method="POST"
+              className="flex flex-col gap-6"
+            >
+              <input
+                type="text"
+                name="_gotcha"
+                className="hidden"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Bulk Inquiry – Sai Agro"
+              />
+
+              <input
+                type="hidden"
+                name="_template"
+                value="table"
+              />
+
+              <input
+                type="hidden"
+                name="_redirect"
+                value="https://saiagro.vercel.app/"
+              />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label
@@ -73,6 +99,7 @@ export function ContactSection() {
                   </label>
                   <input
                     id="name"
+                    name="name"
                     type="text"
                     placeholder="Your name"
                     className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
@@ -87,6 +114,7 @@ export function ContactSection() {
                   </label>
                   <input
                     id="company"
+                    name="company"
                     type="text"
                     placeholder="Company name"
                     className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
@@ -103,6 +131,7 @@ export function ContactSection() {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="you@company.com"
                     className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
@@ -117,6 +146,7 @@ export function ContactSection() {
                   </label>
                   <input
                     id="phone"
+                    name="phone"
                     type="tel"
                     placeholder="+1 234 567 890"
                     className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
@@ -132,6 +162,7 @@ export function ContactSection() {
                 </label>
                 <select
                   id="product"
+                  name="producct"
                   className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   defaultValue=""
                 >
@@ -153,6 +184,7 @@ export function ContactSection() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   placeholder="Tell us about your requirements, quantity, destination country..."
                   className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
