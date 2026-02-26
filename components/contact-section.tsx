@@ -28,7 +28,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-foreground">Email Us</p>
                   <p className="text-sm text-muted-foreground">
-                    exports@spiceroot.com
+                    exports@saiagro.com
                   </p>
                 </div>
               </div>
@@ -50,7 +50,11 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-foreground">Visit Us</p>
                   <p className="text-sm text-muted-foreground">
-                    Industrial Area, Sangli, Maharashtra, India
+                    Market Yard, Mondha,
+                    <br />
+                    Basmath Taluka, Hingoli District,
+                    <br />
+                    Maharashtra – 431512, India
                   </p>
                 </div>
               </div>
@@ -136,9 +140,7 @@ export function ContactSection() {
                   </option>
                   <option>Turmeric Fingers</option>
                   <option>Turmeric Powder</option>
-                  <option>Red Chilli</option>
-                  <option>Coriander</option>
-                  <option>Other Spices</option>
+                  <option>Turmeric Bulbs</option>
                   <option>Multiple Products</option>
                 </select>
               </div>

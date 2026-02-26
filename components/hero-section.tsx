@@ -12,28 +12,28 @@ export function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-secondary/70" />
+        <div className="absolute inset-0 bg-secondary/60" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32 text-center">
         <div className="mx-auto max-w-3xl">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            Trusted Global Spice Exporter
+            Sai Agro – Turmeric Specialist
           </p>
           <h1 className="font-serif text-4xl font-bold leading-tight text-background sm:text-5xl lg:text-7xl text-balance">
-            Premium Turmeric & Spices for Global Markets
+            Premium Turmeric Products for Global Markets
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-background/80 max-w-2xl mx-auto text-pretty">
-            Sourced from the finest farms, processed to international quality
-            standards, and delivered worldwide. Your trusted partner in premium
-            spice exports.
+            Sourced from the finest turmeric farms, processed to international
+            quality standards, and delivered worldwide. Your trusted partner for
+            bulk turmeric exports.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#products"
               className="rounded-lg bg-primary px-8 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-colors"
             >
-              View Products
+              View Turmeric Products
             </Link>
             <Link
               href="#contact"

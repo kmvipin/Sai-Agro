@@ -14,10 +14,18 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'SpiceRoot Exports | Premium Turmeric & Spices for Global Markets',
+  title: 'Sai Agro | Premium Turmeric Exporter for Global Markets',
   description:
-    'Leading exporter of premium turmeric, red chilli, coriander and spices. Trusted by global buyers for quality, purity, and reliability. Request a bulk quote today.',
-  keywords: ['turmeric export', 'spice supplier', 'bulk spices', 'Indian spices', 'wholesale turmeric'],
+    'Sai Agro is a specialized exporter and wholesaler of premium turmeric products including turmeric fingers, turmeric powder, and turmeric bulbs. Trusted by global buyers for export-grade quality, purity, and consistent bulk supply.',
+  keywords: [
+    'turmeric exporter',
+    'turmeric fingers export',
+    'turmeric powder wholesale',
+    'turmeric bulbs supplier',
+    'bulk turmeric India',
+    'haldi exporter',
+    'Sai Agro turmeric',
+  ],
 }
 
 export const viewport: Viewport = {

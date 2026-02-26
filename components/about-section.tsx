@@ -51,20 +51,22 @@ export function AboutSection() {
               Our Heritage
             </p>
             <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl leading-tight text-balance">
-              Rooted in Tradition, Built for Global Trade
+              Sai Agro: Turmeric Specialists for Global Markets
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              For over two decades, SpiceRoot has been sourcing the finest
-              turmeric and spices from India{"'"}s most fertile regions. Our
-              deep-rooted relationships with farming communities, combined with
-              modern processing facilities, ensure that every shipment meets
-              the stringent quality benchmarks demanded by international
+              Sai Agro Spices and Edible Products Pvt. Ltd. specializes exclusively
+              in sourcing and exporting the finest turmeric (Haldi) from
+              India{"'"}s most fertile regions under the Vaishnavi 108 brand.
+              Our deep-rooted relationships with farming communities, combined
+              with modern processing facilities, ensure that every shipment
+              meets the stringent quality benchmarks demanded by international
               markets.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               From farm to port, we control every step of the supply chain,
-              delivering consistent quality, competitive pricing, and
-              dependable logistics to buyers across 40+ countries.
+              delivering premium turmeric products with consistent quality,
+              competitive bulk pricing, and dependable logistics to buyers
+              across global markets.
             </p>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">

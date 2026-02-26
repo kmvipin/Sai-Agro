@@ -19,18 +19,19 @@ export function Footer() {
                 </svg>
               </div>
               <span className="text-xl font-serif font-bold text-secondary-foreground">
-                SpiceRoot
+                Sai Agro
               </span>
             </div>
             <p className="text-sm leading-relaxed text-secondary-foreground/60">
-              Premium turmeric and spice exporter serving global markets with
-              quality, trust, and reliability since 1998.
+              Premium turmeric exporter serving global markets with quality,
+              trust, and reliability. Vaishnavi 108 brand turmeric for
+              wholesale and export.
             </p>
           </div>
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-secondary-foreground mb-4">
-              Products
+              Turmeric Products
             </h3>
             <ul className="flex flex-col gap-3">
               <li>
@@ -54,23 +55,7 @@ export function Footer() {
                   href="#products"
                   className="text-sm text-secondary-foreground/60 hover:text-primary transition-colors"
                 >
-                  Red Chilli
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#products"
-                  className="text-sm text-secondary-foreground/60 hover:text-primary transition-colors"
-                >
-                  Coriander
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#products"
-                  className="text-sm text-secondary-foreground/60 hover:text-primary transition-colors"
-                >
-                  Other Spices
+                  Turmeric Bulbs
                 </Link>
               </li>
             </ul>
@@ -122,12 +107,14 @@ export function Footer() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li className="text-sm text-secondary-foreground/60">
-                Industrial Area, Sangli,
+                Market Yard, Mondha,
                 <br />
-                Maharashtra, India
+                Basmath Taluka, Hingoli District,
+                <br />
+                Maharashtra – 431512, India
               </li>
               <li className="text-sm text-secondary-foreground/60">
-                exports@spiceroot.com
+                exports@saiagro.com
               </li>
               <li className="text-sm text-secondary-foreground/60">
                 +91 98765 43210
@@ -138,7 +125,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-secondary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-secondary-foreground/40">
-            {`\u00A9 ${new Date().getFullYear()} SpiceRoot Exports. All rights reserved.`}
+            {`\u00A9 ${new Date().getFullYear()} Sai Agro Spices and Edible Products Pvt. Ltd. All rights reserved.`}
           </p>
           <div className="flex items-center gap-6">
             <Link

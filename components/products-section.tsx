@@ -7,37 +7,23 @@ const products = [
   {
     name: "Turmeric Fingers",
     description:
-      "Premium whole dried turmeric fingers with high curcumin content, sourced from select farms.",
-    image: "/images/product-turmeric-fingers.jpg",
+      "Raw whole turmeric with high curcumin content. Premium export-grade quality for bulk supply worldwide.",
+    image: "/images/product-turmeric-fingers.png",
     badge: "Best Seller",
   },
   {
     name: "Turmeric Powder",
     description:
-      "Finely ground turmeric powder with vibrant golden color and rich aroma, ideal for export.",
-    image: "/images/product-turmeric-powder.jpg",
+      "Finely ground turmeric with consistent golden color and rich aroma. Suitable for international markets.",
+    image: "/images/product-turmeric-powder.png",
     badge: "Premium Grade",
   },
   {
-    name: "Red Chilli",
+    name: "Turmeric Bulbs",
     description:
-      "Dried red chilli varieties with consistent heat levels, color, and pungency for global markets.",
-    image: "/images/product-red-chilli.jpg",
+      "High-curcumin turmeric bulbs, cleaned and processed for industrial and export use.",
+    image: "/images/product-turmeric-bulbs.png",
     badge: null,
-  },
-  {
-    name: "Coriander",
-    description:
-      "Whole and ground coriander with distinctive aroma, carefully cleaned and processed.",
-    image: "/images/product-coriander.jpg",
-    badge: null,
-  },
-  {
-    name: "Other Spices",
-    description:
-      "Cumin, black pepper, cardamom, cloves, and a wide range of premium Indian spices.",
-    image: "/images/product-mixed-spices.jpg",
-    badge: "Wide Range",
   },
 ]
 
@@ -47,18 +33,18 @@ export function ProductsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">
-            Our Products
+            Turmeric Products
           </p>
           <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl text-balance">
-            Premium Spices, Sourced with Care
+            Premium Haldi (Turmeric), Sourced with Care
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Each product undergoes rigorous quality testing and is available in
-            custom packaging to meet your market requirements.
+            custom packaging to meet your international market requirements.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
             <div
               key={product.name}
