@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: Award,
-    title: "Quality",
+    title: "Controlled Processing",
     description: "Meeting the highest international quality and safety standards.",
   },
   {
@@ -39,7 +39,7 @@ export function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 shadow-xl hidden lg:block">
-              <p className="font-serif text-3xl font-bold text-primary-foreground">40+</p>
+              <p className="font-serif text-3xl font-bold text-primary-foreground">30+</p>
               <p className="text-sm font-medium text-primary-foreground/80">
                 Years of Excellence
               </p>

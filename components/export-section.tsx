@@ -8,7 +8,7 @@ const stats = [
   { value: "40+", label: "Companies Served", icon: Globe },
   { value: "5000+", label: "Metric Tons Annually", icon: Ship },
   { value: "99.5%", label: "Quality Compliance", icon: BarChart3 },
-  { value: "40+", label: "Years in Export", icon: Clock },
+  { value: "30+", label: "Years of Industry", icon: Clock },
 ]
 
 const exportImages = [
