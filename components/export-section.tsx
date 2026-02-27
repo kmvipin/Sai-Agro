@@ -1,3 +1,6 @@
+'use client'
+
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Globe, Ship, BarChart3, Clock } from "lucide-react"
 
@@ -8,7 +11,35 @@ const stats = [
   { value: "40+", label: "Years in Export", icon: Clock },
 ]
 
+const exportImages = [
+  {
+    src: "/images/export-warehouse.jpg",
+    alt: "SpiceRoot export warehouse and logistics",
+  },
+  {
+    src: "/images/export-warehouse.jpg",
+    alt: "Spice processing and quality control",
+  },
+  {
+    src: "/images/export-warehouse.jpg",
+    alt: "Global logistics and shipping operations",
+  },
+]
+
 export function ExportSection() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isHovering, setIsHovering] = useState(false)
+
+  useEffect(() => {
+    if (isHovering) return
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % exportImages.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [isHovering])
+
   return (
     <section id="exports" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -46,13 +77,42 @@ export function ExportSection() {
           </div>
 
           <div className="relative">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
-              <Image
-                src="/images/export-warehouse.jpg"
-                alt="SpiceRoot export warehouse and logistics"
-                fill
-                className="object-cover"
-              />
+            <div
+              className="relative aspect-[4/5] rounded-2xl overflow-hidden"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
+              {exportImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    index === currentIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Indicator Dots */}
+            <div className="flex justify-center gap-2 mt-6">
+              {exportImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? "bg-primary w-8"
+                      : "bg-border w-2 hover:bg-primary/50"
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
