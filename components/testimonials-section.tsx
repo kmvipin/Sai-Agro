@@ -1,4 +1,13 @@
+'use client'
+
 import { Quote } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel"
 
 const testimonials = [
   {
@@ -37,31 +46,57 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.name}
-              className="rounded-2xl border border-border bg-card p-8 flex flex-col"
-            >
-              <Quote className="h-8 w-8 text-primary/30 mb-4" />
-              <p className="text-base leading-relaxed text-muted-foreground flex-1">
-                {`"${testimonial.quote}"`}
-              </p>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="font-semibold text-foreground">
-                  {testimonial.name}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonial.role}
-                </p>
-                <p className="text-sm font-medium text-primary">
-                  {testimonial.company}
-                </p>
-              </div>
-            </div>
+            <TestimonialCard key={testimonial.name} testimonial={testimonial} />
           ))}
+        </div>
+
+        {/* Mobile Carousel View */}
+        <div className="md:hidden">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial) => (
+                <CarouselItem key={testimonial.name}>
+                  <TestimonialCard testimonial={testimonial} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center gap-2 mt-8">
+              <CarouselPrevious className="relative -left-0 -translate-y-0 h-10 w-10" />
+              <CarouselNext className="relative -right-0 -translate-y-0 h-10 w-10" />
+            </div>
+          </Carousel>
         </div>
       </div>
     </section>
+  )
+}
+
+function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
+  return (
+    <div className="rounded-2xl border border-border bg-card p-8 flex flex-col">
+      <Quote className="h-8 w-8 text-primary/30 mb-4" />
+      <p className="text-base leading-relaxed text-muted-foreground flex-1">
+        {`"${testimonial.quote}"`}
+      </p>
+      <div className="mt-6 pt-6 border-t border-border">
+        <p className="font-semibold text-foreground">
+          {testimonial.name}
+        </p>
+        <p className="text-sm text-muted-foreground">
+          {testimonial.role}
+        </p>
+        <p className="text-sm font-medium text-primary">
+          {testimonial.company}
+        </p>
+      </div>
+    </div>
   )
 }
