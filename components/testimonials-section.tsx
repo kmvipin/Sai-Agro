@@ -45,7 +45,7 @@ export function TestimonialsSection() {
         <div className="md:hidden">
           <Swiper
             spaceBetween={16}
-            slidesPerView={1.1}   // show a bit of the next card
+            slidesPerView={1.2}   // show a bit of the next card
             centeredSlides={true} // keeps the active card centered
           >
             {testimonials.map((testimonial) => (
