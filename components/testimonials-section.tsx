@@ -59,11 +59,13 @@ export function TestimonialsSection() {
             opts={{
               align: "start",
               loop: true,
+              skipSnaps: false,
+              dragFree: true,
             }}
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {testimonials.map((testimonial) => (
-                <CarouselItem key={testimonial.name}>
+                <CarouselItem key={testimonial.name} className="pl-2 sm:pl-4 basis-[85%] sm:basis-[90%]">
                   <TestimonialCard testimonial={testimonial} />
                 </CarouselItem>
               ))}
