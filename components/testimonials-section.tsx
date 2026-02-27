@@ -40,7 +40,7 @@ export function TestimonialsSection() {
             Testimonials
           </p>
           <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl text-balance">
-            Trusted by Buyers Worldwide
+            Trusted by Buyers Across India
           </h2>
         </div>
 
