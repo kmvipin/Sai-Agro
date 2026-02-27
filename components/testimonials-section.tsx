@@ -1,8 +1,11 @@
-"use client"
+'use client'
 
 import { Quote } from "lucide-react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import "swiper/css"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
 
 const testimonials = [
   {
@@ -41,64 +44,52 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        {/* Mobile: Swiper slider */}
-        <div className="md:hidden">
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={1.2}   // show a bit of the next card
-            centeredSlides={true} // keeps the active card centered
-          >
-            {testimonials.map((testimonial) => (
-              <SwiperSlide key={testimonial.name}>
-                <div className="rounded-2xl border border-border bg-card p-8 flex flex-col">
-                  <Quote className="h-8 w-8 text-primary/30 mb-4" />
-                  <p className="text-base leading-relaxed text-muted-foreground flex-1">
-                    {`"${testimonial.quote}"`}
-                  </p>
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <p className="font-semibold text-foreground">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                    </p>
-                    <p className="text-sm font-medium text-primary">
-                      {testimonial.company}
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
+        {/* Desktop Grid View */}
+        <div className="hidden md:grid grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.name} testimonial={testimonial} />
+          ))}
         </div>
 
-        {/* Desktop: Grid layout */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.name}
-              className="rounded-2xl border border-border bg-card p-8 flex flex-col"
-            >
-              <Quote className="h-8 w-8 text-primary/30 mb-4" />
-              <p className="text-base leading-relaxed text-muted-foreground flex-1">
-                {`"${testimonial.quote}"`}
-              </p>
-              <div className="mt-6 pt-6 border-t border-border">
-                <p className="font-semibold text-foreground">
-                  {testimonial.name}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonial.role}
-                </p>
-                <p className="text-sm font-medium text-primary">
-                  {testimonial.company}
-                </p>
-              </div>
-            </div>
-          ))}
+        {/* Mobile Carousel View */}
+        <div className="md:hidden">
+          <Carousel
+            opts={{
+              align: "start",
+            }}
+          >
+            <CarouselContent className="-ml-2 sm:-ml-4">
+              {testimonials.map((testimonial) => (
+                <CarouselItem key={testimonial.name} className="pl-2 sm:pl-4 basis-[85%] sm:basis-[90%]">
+                  <TestimonialCard testimonial={testimonial} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
+  )
+}
+
+function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
+  return (
+    <div className="rounded-2xl border border-border bg-card p-8 flex flex-col h-full">
+      <Quote className="h-8 w-8 text-primary/30 mb-4" />
+      <p className="text-base leading-relaxed text-muted-foreground flex-1">
+        {`"${testimonial.quote}"`}
+      </p>
+      <div className="mt-6 pt-6 border-t border-border">
+        <p className="font-semibold text-foreground">
+          {testimonial.name}
+        </p>
+        <p className="text-sm text-muted-foreground">
+          {testimonial.role}
+        </p>
+        <p className="text-sm font-medium text-primary">
+          {testimonial.company}
+        </p>
+      </div>
+    </div>
   )
 }
