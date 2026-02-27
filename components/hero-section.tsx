@@ -20,13 +20,13 @@ export function HeroSection() {
       <div className="relative z-10 section-padding container-narrow w-full pt-32">
         <div className="max-w-2xl">
           <p className="animate-fade-up text-primary font-body text-sm font-semibold uppercase tracking-[0.2em] mb-6">
-            Wholesale Export Since 2010
+            Wholesale Supply Since 1990
           </p>
           <h1 className="animate-fade-up-delay-1 section-title text-secondary-foreground leading-[1.1]">
-            Premium Turmeric & Spices for Global Markets
+            Premium Turmeric & Spices for Indian Markets
           </h1>
           <p className="animate-fade-up-delay-2 mt-6 text-lg text-secondary-foreground/80 max-w-lg leading-relaxed font-body">
-            Sourced from India's finest farms. Tested for purity. Exported worldwide with consistency you can trust.
+            Sourced from India’s finest turmeric-growing regions and processed with strict quality standards.
           </p>
           <div className="animate-fade-up-delay-3 mt-10 flex flex-wrap gap-4">
             <a

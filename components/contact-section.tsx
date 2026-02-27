@@ -15,9 +15,7 @@ export function ContactSection() {
               Request a Bulk Quote Today
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Whether you need a sample shipment or a full container load, our
-              export team is ready to assist. Tell us your requirements and
-              we{"'"}ll provide a competitive quote within 24 hours.
+              Whether you need a small trial order or a large bulk supply, our team is ready to assist. Share your requirements and we{"'"}ll provide a competitive quote within 24 hours.
             </p>
 
             <div className="mt-10 flex flex-col gap-6">

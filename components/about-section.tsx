@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: Award,
-    title: "Export Quality",
+    title: "Quality",
     description: "Meeting the highest international quality and safety standards.",
   },
   {
@@ -39,7 +39,7 @@ export function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 shadow-xl hidden lg:block">
-              <p className="font-serif text-3xl font-bold text-primary-foreground">25+</p>
+              <p className="font-serif text-3xl font-bold text-primary-foreground">40+</p>
               <p className="text-sm font-medium text-primary-foreground/80">
                 Years of Excellence
               </p>
@@ -63,10 +63,9 @@ export function AboutSection() {
               markets.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              From farm to port, we control every step of the supply chain,
-              delivering premium turmeric products with consistent quality,
-              competitive bulk pricing, and dependable logistics to buyers
-              across global markets.
+              From sourcing to processing, we manage each stage of the supply chain to deliver 
+              premium turmeric products with consistent quality, competitive bulk pricing, 
+              and dependable supply to buyers across India.
             </p>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">

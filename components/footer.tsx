@@ -23,17 +23,16 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-secondary-foreground/60">
-              Premium turmeric exporter serving global markets with quality,
-              trust, and reliability. Vaishnavi 108 brand turmeric for
-              wholesale and export.
+              Premium turmeric supplier delivering quality, trust, and reliability. 
+              Vaishnavi 108 brand turmeric for wholesale and bulk supply across India.
             </p>
           </div>
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-secondary-foreground mb-4">
-              Turmeric Products
+              {/* Turmeric Products */}
             </h3>
-            <ul className="flex flex-col gap-3">
+            {/* <ul className="flex flex-col gap-3">
               <li>
                 <Link
                   href="#products"
@@ -58,7 +57,7 @@ export function Footer() {
                   Turmeric Bulbs
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
 
           <div>
