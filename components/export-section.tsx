@@ -29,6 +29,8 @@ const exportImages = [
 export function ExportSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isHovering, setIsHovering] = useState(false)
+  const [touchStart, setTouchStart] = useState(0)
+  const [touchEnd, setTouchEnd] = useState(0)
 
   useEffect(() => {
     if (isHovering) return
@@ -39,6 +41,30 @@ export function ExportSection() {
 
     return () => clearInterval(interval)
   }, [isHovering])
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    setTouchEnd(e.changedTouches[0].clientX)
+    handleSwipe()
+  }
+
+  const handleSwipe = () => {
+    if (!touchStart || !touchEnd) return
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > 50
+    const isRightSwipe = distance < -50
+
+    if (isLeftSwipe) {
+      setCurrentIndex((prev) => (prev + 1) % exportImages.length)
+    } else if (isRightSwipe) {
+      setCurrentIndex((prev) =>
+        prev === 0 ? exportImages.length - 1 : prev - 1
+      )
+    }
+  }
 
   return (
     <section id="exports" className="py-24 lg:py-32">
@@ -78,14 +104,16 @@ export function ExportSection() {
 
           <div className="relative">
             <div
-              className="relative aspect-[4/5] rounded-2xl overflow-hidden"
+              className="relative aspect-[4/5] rounded-2xl overflow-hidden cursor-grab active:cursor-grabbing"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
             >
               {exportImages.map((image, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                  className={`absolute inset-0 transition-opacity duration-2000 ease-in-out ${
                     index === currentIndex ? "opacity-100" : "opacity-0"
                   }`}
                 >
