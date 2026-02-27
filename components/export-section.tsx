@@ -72,10 +72,10 @@ export function ExportSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary mb-4">
-              Global Exports
+              Wholesale Operations
             </p>
             <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl leading-tight text-balance">
-              Why Global Buyers Trust SaiAgro
+              Why Buyers Trust Sai Agro
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Our operations are built around an integrated supply chain that connects trusted sourcing 
