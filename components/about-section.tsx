@@ -51,7 +51,7 @@ export function AboutSection() {
               Our Heritage
             </p>
             <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl leading-tight text-balance">
-              Sai Agro: Turmeric Specialists for Global Markets
+              Sai Agro: Turmeric Specialists for Indian Markets
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Sai Agro Spices and Edible Products Pvt. Ltd. specializes exclusively
