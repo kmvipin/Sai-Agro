@@ -18,8 +18,8 @@ export function Footer() {
                   <path d="M12 2C8 2 4 6 4 12s4 10 8 10c1 0 2-2 2-4 0-1-.5-2-1-2.5C12.5 15 12 14 12 12c0-2 1-4 3-5.5C16.5 5.5 16 2 12 2z" />
                 </svg>
               </div>
-              <span className="text-xl font-serif font-bold text-secondary-foreground">
-                Sai Agro
+              <span className="font-heading text-xl font-bold tracking-tight transition-colors text-secondary-foreground">
+                <span className="text-primary">Sai</span>Agro
               </span>
             </div>
             <p className="text-sm leading-relaxed text-secondary-foreground/60">

@@ -28,7 +28,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-foreground">Email Us</p>
                   <p className="text-sm text-muted-foreground">
-                    exports@saiagro.com
+                    sp.tmc1@gmail.com
                   </p>
                 </div>
               </div>
@@ -39,7 +39,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-foreground">Call Us</p>
                   <p className="text-sm text-muted-foreground">
-                    +91 98765 43210
+                    +91 87005 12955
                   </p>
                 </div>
               </div>
